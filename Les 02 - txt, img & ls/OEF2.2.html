@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+
+</head>
+<body>
+        <body>
+            <div id="Home" onload="show('Home', 'Page1')">
+                <hr>
+                <h1>Deze baasjes lijken op hun hond</h1>
+                 <hr>
+                 <a href="#" onclick=" show('Page1', 'Page2');"> <img src="img/klein/1.jpg" alt="img1"></a>
+                 <a href="#" onclick=" show('Page2', 'Home, Page1, Page3, Page4, Page5, Page6');"> <img src="img/klein/2.jpg" alt="img1"></a>
+                 <a href="#" onclick=" show('Page3', 'Home, Page2, Page1, Page4, Page5, Page6');"> <img src="img/klein/3.jpg" alt="img1"></a>
+                 <a href="#" onclick=" show('Page4', 'Home, Page2, Page3, Page1, Page5, Page6');"> <img src="img/klein/4.jpg" alt="img1"></a>
+                 <a href="#" onclick=" show('Page5', 'Home, Page2, Page3, Page4, Page1, Page6');"> <img src="img/klein/5.jpg" alt="img1"></a>
+                 <a href="#" onclick=" show('Page6', 'Home, Page2, Page3, Page4, Page5, Page1');"> <img src="img/klein/6.jpg" alt="img1"></a>
+            </div>
+          
+
+            <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/1_1.jpg" alt="img1">
+                <a href="#" onclick="return show('Home', 'Page1, Page2, Page3, Page4, Page5, Page6');">ga trug naar home</a>
+              </div>
+
+              <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/2_1.jpg" alt="img2">
+                <a href="#" onclick="return show('Home', 'Home');">ga trug naar home</a>
+              </div>
+
+              <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/3_1.jpg" alt="img3">
+                <a href="#" onclick="return show('Home', 'Page1, Page2, Page3, Page4, Page5, Page6');">ga trug naar home</a>
+              </div>
+
+              <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/4_1.jpg" alt="img4">
+                <a href="#" onclick="return show('Home', 'Page1, Page2, Page3, Page4, Page5, Page6');">ga trug naar home</a>
+              </div>
+
+              <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/5_1.jpg" alt="img5">
+                <a href="#" onclick="return show('Home', 'Page1, Page2, Page3, Page4, Page5, Page6');">ga trug naar home</a>
+              </div>
+
+              <div id="Page1">
+                <h1>Eigenaar 1</h1><br>
+                <img src="img/groot/6_1.jpg" alt="img6">
+                <a href="#" onclick="return show('Home', 'Page1, Page2, Page3, Page4, Page5, Page6');">ga trug naar home</a>
+              </div>
+                
+             
+
+</html>
